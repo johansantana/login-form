@@ -1,0 +1,112 @@
+/* Importar variables */
+@import url("var.css");
+
+/* Importar estilos móvil */
+@import url("mobile.css");
+
+/* Declarar variables */
+:root {
+	--backgroundColor: #f0f0f0;
+	--hoverAzul: #6b81ff;
+}
+
+img {
+	margin-top: 4em;
+	display: inline;
+	width: 100%;
+	max-width: 490px;
+	margin: 2em 0 2em 0;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+p {
+	font-size: 15px;
+}
+
+h2 {
+	flex-grow: 0;
+	margin: 0 2em;
+}
+
+input {
+	font-size: 14px;
+}
+
+form {
+	margin: 45px 0 0 0;
+}
+
+select {
+	margin: 20px 0 0 0;
+}
+
+.container {
+	padding: 3em 20%;
+	width: 100%;
+	height: 100vh;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--backgroundColor);
+}
+
+.container__description {
+	flex-grow: 0;
+	margin: 1em 3.5em;
+	display: block;
+	max-width: 300px;
+}
+
+.form__input-container {
+	padding: 1.2em;
+	margin-bottom: 2em;
+}
+.container__section {
+	height: 95%;
+	width: 70%;
+	overflow: hidden;
+}
+
+.container__subtitle:first-of-type {
+	margin: 6em 0 0 0;
+}
+
+.container__subtitle:nth-of-type(2) {
+	margin: 20px 0;
+}
+
+.container__section:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-image: none;
+	border-radius: 25px 0 0 25px;
+}
+
+.container__section:nth-child(2) {
+	border-radius: 0 25px 25px 0;
+	padding: 3em 10%;
+}
+
+.container__small-text {
+	max-width: 285px;
+	font-size: 12px;
+}
+
+.button-container {
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.button {
+	padding: 1.1em;
+	font-size: 14px;
+	transition: background-color 0.5s;
+}
+
+.button:nth-child(2) {
+	gap: 10px;
+}

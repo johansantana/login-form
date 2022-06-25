@@ -1,0 +1,12 @@
+/* Declarar variables */
+:root {
+	--azulPrincipal: #4760ef;
+	--azulAction: #263bb1;
+	--grisPrincipal: #fafbfc;
+	--grisSecundario: #b8b8b8;
+	--azulSecundario: #344055;
+	--azulTerciario: #77839d;
+	--colorPlaceholder: #b3b3be;
+	--colorOutline: #ebecf3;
+	--blanco: #ffffff;
+}

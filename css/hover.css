@@ -1,0 +1,31 @@
+/* Importar variables */
+@import url("var.css");
+
+.button:first-child:hover {
+	background-color: var(--hoverAzul);
+}
+
+.form__input-container:hover,
+.button:last-child:hover {
+	background-color: var(--colorOutline);
+}
+
+.form__input-container:hover > i {
+	color: var(--azulTerciario);
+}
+
+#togglePassword:hover {
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button:first-child:focus {
+	outline: solid var(--azulSecundario) 2px;
+}
+
+button:focus {
+	outline: solid var(--azulPrincipal) 2px;
+}

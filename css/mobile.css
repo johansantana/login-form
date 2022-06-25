@@ -1,0 +1,200 @@
+/* Importar fuente */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* Importar variables */
+@import url("var.css");
+
+/* Normalización */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* prettier-ignore */
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+	background-color: var(--grisPrincipal);
+}
+
+h1 {
+	font-size: 28px;
+	margin: 10px 0;
+}
+
+h2 {
+	color: var(--azulPrincipal);
+	margin-bottom: 10px;
+}
+
+p {
+	font-weight: 500;
+	font-size: 13px;
+	color: var(--grisSecundario);
+}
+
+img {
+	display: none;
+}
+
+a {
+	color: var(--azulPrincipal);
+	text-decoration: none;
+}
+
+select {
+	background-color: transparent;
+	font-size: 12px;
+	border: none;
+	outline: none;
+	float: right;
+}
+
+input {
+	line-height: 1em;
+	background-color: transparent;
+	flex-grow: 1;
+	color: var(--azulSecundario);
+	font-size: 12px;
+	outline: none;
+	border: none;
+}
+
+form {
+	font-size: 0.9em;
+	margin: 2em 0;
+}
+
+label {
+	font-weight: 500;
+}
+
+div > i {
+	color: var(--colorOutline);
+	transition: color 0.5s;
+}
+
+h1 {
+	color: var(--azulSecundario);
+}
+
+label,
+select {
+	color: var(--azulTerciario);
+	cursor: pointer;
+}
+
+label:nth-child(2) {
+	margin: 20px 0 0;
+}
+
+.button-container {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 3em 0;
+}
+
+.button {
+	flex-grow: 1;
+	min-width: 140px;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	border-radius: 7px;
+	font-weight: 500;
+	padding: 12px 7px;
+	font-size: 12px;
+	justify-content: space-between;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.button:first-child {
+	color: var(--blanco);
+	background-color: var(--azulPrincipal);
+}
+
+.outline {
+	outline: solid var(--azulPrincipal) 2px;
+}
+
+.button:nth-child(2) {
+	justify-content: center;
+	gap: 5px;
+	display: flex;
+	border: solid var(--colorOutline) 2px;
+	background-color: var(--blanco);
+	color: var(--azulTerciario);
+}
+
+.form__input-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 10px;
+	border: solid var(--colorOutline) 2px;
+	padding: 1em;
+	margin: 5px 0 1em;
+	transition: background-color 0.5s;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+}
+
+.container__section {
+	padding: 3em 2em 2em;
+}
+
+.container__description {
+	font-weight: 400;
+	font-size: 13px;
+	margin: 2em 0 0;
+}
+
+.container__small-text {
+	font-size: 10px;
+}
+
+.container__section:first-child {
+	background-color: var(--grisPrincipal);
+	background-image: url("../img/background.svg");
+	background-size: cover;
+}
+
+.container__section:nth-child(2) {
+	padding-right: 2em;
+	background-color: var(--blanco);
+	border-radius: 25px 25px 0 0;
+	flex-grow: 1;
+}
+
+.container__subtitle > a {
+	margin-left: 5px;
+}
+
+.button:nth-child(2) > i {
+	color: var(--azulPrincipal);
+}
+
+.container__subtitle:first-of-type {
+	margin-top: 50px;
+}
+
+.button:first-child:active {
+	background-color: var(--azulAction);
+}
+
+.button:nth-child(2):active {
+	background-color: var(--colorOutline);
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+	display: none;
+}

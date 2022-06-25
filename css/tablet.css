@@ -1,0 +1,63 @@
+/* Importar variables */
+@import url("var.css");
+
+/* Importar estilos de móvil */
+@import url("mobile.css");
+
+h2 {
+	font-size: 28px;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+p {
+	font-size: 18px;
+}
+
+label,
+select,
+input {
+	font-size: 16px;
+}
+
+.button {
+	padding: 20px;
+	flex-grow: 1;
+	max-width: 100%;
+	font-size: 18px;
+}
+
+.container {
+	background-image: url("../img/background.svg");
+	padding: 5em;
+}
+
+.container__section:first-child {
+	padding-top: 0;
+	background-image: none;
+	background-color: transparent;
+}
+
+.container__description {
+	font-size: 20px;
+	max-width: 400px;
+}
+
+.container__section:nth-child(2) {
+	padding: 10% 10%;
+	border-radius: 20px;
+}
+
+.button-container {
+	flex-wrap: wrap;
+}
+
+.container__small-text {
+	font-size: 15px;
+}
+
+.container__subtitle:nth-of-type(2) {
+	margin-bottom: 3em;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Log-In | HTML, CSS & JS</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" media="(max-width: 550px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 550px) and (max-width: 1079px)" href="css/tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1081px)" href="css/desktop.css" />
+    <link rel="stylesheet" media="(hover: hover)" href="css/hover.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__section">
+        <h2>Hola.</h2>
+        <p class="container__description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ipsa. </p>
+        <img src="img/login.svg" alt="" />
+      </div>
+      <div class="container__section">
+        <select name="language" id="language">
+          <option value="english">English (USA)</option>
+          <option value="español" selected="selected">Español (LA)</option>
+        </select>
+        <p class="container__subtitle">COMIENZA GRATIS</p>
+        <h1 class="container__title">Registrate.</h1>
+        <p class="container__subtitle"> ¿Ya tienes una cuenta? <a href="#">Inicia Sesión</a> </p>
+        <form class="form">
+          <label for="email">E-mail</label>
+          <div class="form__input-container">
+            <input type="email" id="email" placeholder="nombre@mail.com" />
+            <i class="fas fa-at"></i>
+          </div>
+          <label for="password">Contraseña</label>
+          <div class="form__input-container">
+            <input type="password" id="password" placeholder="6+ Letras, 1 Mayúscula" />
+            <i class="fas fa-lock" id="togglePassword"></i>
+          </div>
+          <div class="button-container">
+            <button class="button" type="submit">Crea una cuenta</button>
+            <button class="button" type="submit"> <i class="fab fa-google"></i><span>Inicia con Google</span> </button>
+          </div>
+        </form>
+        <p class="container__small-text">
+          Este sitio esta protegido por reCAPTCHA y las
+          <a href="https://policies.google.com/privacy?hl=es" target="_blank">Política de privacidad</a>
+          y
+          <a href="https://policies.google.com/terms?hl=es" target="_blank">Términos de servicio</a>
+          de Google aplican.
+        </p>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
